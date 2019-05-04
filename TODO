@@ -1,0 +1,11 @@
+1. cidr support for ipv4 (and ipv6)
+   -also handle :: in IPv6 somehow
+2. missing support for non-public IPv6 space, the same way ipv4 ignores private
+   networks
+3. missing jump logic: -s 9.0.0.0 -e 11.255.255.255 -> 10.x.x.x is private
+   jump would have to get done from 9.255.255.255 to 11.0.0.0
+4. (maybe) cabable of bruteforcing hostnames if you provide a network.name
+   like: XXXXXXX.example.com
+5. Threading
+6. Handle HOST:Port
+ -> [x.x.x.x]:443 as example

@@ -1,0 +1,11 @@
+CC=gcc
+CFLAGS=-pipe -O2 -Wall -std=c99 -pedantic -D_GNU_SOURCE
+
+khc: ip.o khc.o
+	$(CC) $(CFLAGS) -lm -lcrypto -lresolv ip.o khc.o -o khc
+ip.o:
+	$(CC) -c $(CFLAGS) ip.c
+khc.o:
+	$(CC) -c $(CFLAGS) khc.c
+clean:
+	ip.o khc.o khc

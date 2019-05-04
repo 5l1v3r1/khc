@@ -1,0 +1,11 @@
+v0.2 - fixed and massively improved IPv4 and IPv6 algorithms
+	- less checks are needed to see if a hash was found
+	- improved logic resulted in a speed gain of at least 39%
+     - added support to brute-force IPv6 addresses
+     - loading needed data into ram to reduce the I/O dramatically
+     - massively reduced memory footprint
+     - code was purified
+     - make the code endian safe
+     - porting to Linux
+     - added -o to specify a output file where the results get stored
+v0.1 - initial release of the concept code

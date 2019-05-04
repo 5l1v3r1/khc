@@ -1,0 +1,4 @@
+On BSD systems	: make
+On LINUX systems: make -f Makefile.gmake
+
+Tested Operating Systems: OpenBSD i386/amd64, Debian 5.0.1 i386

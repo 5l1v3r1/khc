@@ -1,0 +1,11 @@
+Guess private network addresses for IPv4
+khc -f known_host -p > results.out
+
+Guessing just 10.10.10.0 to 10.10.37.0
+khc -f known_host -s 10.10.10.0 -e 10.10.37.0 > results.out
+
+Guessing IPv6 is familiar
+khc -f known_host -s 0000:0000:0000:0000:0000:0000:0000:0000 \
+		  -e 0000:0000:0000:0000:0000:ffff:ffff:ffff > results.out
+
+Please use ./khc to get the list of options.
